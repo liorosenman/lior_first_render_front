@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body style="background-color: chocolate;">
+<h2 id="msg"></h2>
+<h3>You will succeed</h3>  
+</body>
+<script>
+    message = "";
+    axios("https://lior-first-render-back.onrender.com").then(res => message = res.data)
+    document.getElementById("msg").innerText = message;
+</script>
+</html>
